@@ -1,0 +1,3 @@
+ext.targets = ['server': []]
+
+apply from: "https://raw.githubusercontent.com/Atakku/gradle/v15/fabric_multitarget.gradle"
