@@ -14,7 +14,7 @@
   "environment": "server",
   "entrypoints": {
     "server": [
-      "dev.atakku.nsmp.restarter.server.ServerRestarter"
+      "rs.neko.smp.restarter.server.ServerRestarter"
     ]
   },
   "depends": {

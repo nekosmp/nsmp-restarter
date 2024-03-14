@@ -1,4 +1,4 @@
-package dev.atakku.nsmp.restarter.server;
+package rs.neko.smp.restarter.server;
 
 import java.util.Timer;
 import java.util.TimerTask;
