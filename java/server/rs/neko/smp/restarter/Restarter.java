@@ -2,7 +2,7 @@
 //
 // This project is dual licensed under MIT and Apache.
 
-package rs.neko.smp.restarter.server;
+package rs.neko.smp.restarter;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -15,9 +15,10 @@ import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class ServerRestarter implements DedicatedServerModInitializer {
+public class Restarter implements DedicatedServerModInitializer {
   public static final Logger LOGGER = LoggerFactory.getLogger("nsmp-restarter");
   private static final Timer TIMER = new Timer();
+
   private static final int[] INTERVALS = new int[] {
       60 * 30,
       60 * 15,
