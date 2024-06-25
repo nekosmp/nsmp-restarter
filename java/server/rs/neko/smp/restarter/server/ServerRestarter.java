@@ -1,15 +1,19 @@
+// Copyright 2024 Atakku <https://atakku.dev>
+//
+// This project is dual licensed under MIT and Apache.
+
 package rs.neko.smp.restarter.server;
 
 import java.util.Timer;
 import java.util.TimerTask;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import net.minecraft.server.MinecraftServer;
+import net.minecraft.text.Text;
 
 import net.fabricmc.api.DedicatedServerModInitializer;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
-import net.minecraft.server.MinecraftServer;
-import net.minecraft.text.Text;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class ServerRestarter implements DedicatedServerModInitializer {
   public static final Logger LOGGER = LoggerFactory.getLogger("nsmp-restarter");
