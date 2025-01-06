@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "nsmp-restarter",
+  "id": "fsmp-restarter",
   "version": "${mod_version}+${minecraft_version}",
   "name": "${mod_name}",
   "authors": [
@@ -14,7 +14,7 @@
   "environment": "server",
   "entrypoints": {
     "server": [
-      "rs.neko.smp.restarter.Restarter"
+      "dev.atakku.fsmp.restarter.Restarter"
     ]
   },
   "depends": {

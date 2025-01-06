@@ -2,7 +2,7 @@
 //
 // This project is dual licensed under MIT and Apache.
 
-package rs.neko.smp.restarter;
+package dev.atakku.fsmp.restarter;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -16,7 +16,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class Restarter implements DedicatedServerModInitializer {
-  public static final Logger LOGGER = LoggerFactory.getLogger("nsmp-restarter");
+  public static final Logger LOGGER = LoggerFactory.getLogger("fsmp-restarter");
   private static final Timer TIMER = new Timer();
 
   private static final int[] INTERVALS = new int[] {
@@ -60,7 +60,7 @@ public class Restarter implements DedicatedServerModInitializer {
 
   @Override
   public void onInitializeServer() {
-    LOGGER.info("Initializing NSMP Restarter");
+    LOGGER.info("Initializing FSMP Restarter");
     ServerLifecycleEvents.SERVER_STARTED.register((server) -> {
       for (int interval : INTERVALS)
         announce(server, interval);
